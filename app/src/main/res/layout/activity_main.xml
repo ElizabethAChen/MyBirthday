@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/inputBdayMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Birthdate (M)"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/inputBdayDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Birthdate (D)"
+            android:inputType="date" />
+
+        <Button
+            android:id="@+id/birthdayChecker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Is it my Birthday?"
+            android:onClick="buClickEvent"/>
+
+
+        <TextView
+            android:id="@+id/userMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:src="@drawable/birthdaycake" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
