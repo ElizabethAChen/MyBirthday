@@ -21,7 +21,8 @@ class MainActivity: AppCompatActivity(){
         val userDOBM:String = inputBdayMonth.text.toString()
         val userDOBD:String = inputBdayDay.text.toString()
         val userDOB = userDOBM.plus(userDOBD)
-        val month:String=Calendar.getInstance().get(Calendar.MONTH).toString()
+        val fixedMonth: Int = Calendar.getInstance().get(Calendar.MONTH) +1
+        val month:String= fixedMonth.toString()
         val day:String=Calendar.getInstance().get(Calendar.DAY_OF_MONTH).toString()
         val currentDate = month.plus(day)
         when {
